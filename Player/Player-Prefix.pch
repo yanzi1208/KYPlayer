@@ -1,0 +1,33 @@
+//
+//  Player-Prefix.pch
+//  Player
+//
+//  Created by zky on 16/1/18.
+//  Copyright © 2016年 ky. All rights reserved.
+//
+
+#ifndef Player_Prefix_pch
+#define Player_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "Macro.h"
+
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+
+#endif
+//#import "AppConfig.h"
+//#import "AppPrefixFile.h"
